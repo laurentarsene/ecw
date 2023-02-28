@@ -1,0 +1,9 @@
+.nav {
+    display: flex;
+    &__center {
+        margin: auto auto;
+    }
+    &__right {
+        margin: auto 0;
+    }
+}
