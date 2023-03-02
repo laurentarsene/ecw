@@ -1,9 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .nav {
     display: flex;
-    &__center {
-        margin: auto auto;
+    margin-top: 1rem;
+    padding-right: 10rem;
+    padding-left: 25rem;
+    justify-content: space-between;
+    &__logo {
+        cursor: pointer;
+        font-weight:bolder;
+        letter-spacing: 2px;
+        &__espace {
+            font-weight:lighter;
+        }
+        &__convivialite {
+        }
+        &__woo {
+            font-weight:100;
+            color:rgb(221, 168, 54);
+        }
     }
-    &__right {
+    &__buttons {
+        color: rgba(0, 0, 0, 0.479);
         margin: auto 0;
+        display: flex;
+        gap:3rem;
+
+        :hover {
+            color:black;
+        }
     }
+    // &__right {
+    //     margin: auto;
+    // }
 }
+
+// .navbarBackground {
+//     background-color: rgba(1, 192, 87, 0.055);
+//     z-index: -5; //for the cursor: pointer on &__left
+//     position: absolute;
+//     border-radius: 100px;
+//     width: 80%;
+//     left:10%;
+//     height: 3rem;
+//     top: 1.5rem;
+// }

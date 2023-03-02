@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "img img img img img hero hero hero hero" "l l l c c c r r r";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin-left: 25rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.herotext {
+  grid-area: hero;
+  letter-spacing: 0.2rem;
+  line-height: 2;
+  margin-top: 3rem;
+}
+
+.heroimage {
+  grid-area: img;
+  background-color: rgba(0, 112, 47, 0.219);
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.textleft {
+  grid-area: l;
+  border-radius: 15px;
+  padding: 2rem;
+  letter-spacing: 2px;
+}
+
+.textcenter {
+  grid-area: c;
+  border-radius: 15px;
+  padding: 2rem;
+  letter-spacing: 2px;
+}
+
+.textright {
+  grid-area: r;
+  border-radius: 15px;
+  padding: 2rem;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=home.component.css.map */

@@ -8,9 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent  {
-  constructor(private router: Router) {
+  constructor(
+    private router: Router
+    ) {
   }
-  goToAboutUs() {
-    this.router.navigate(['/', 'aboutUs']);
+  redirectto(where:string) {
+    this.router.navigateByUrl("/" + where)
   }
 }

@@ -10,7 +10,4 @@ export class AppComponent  {
   title="mommy"
   constructor(private router: Router) {
   }
-  goToAboutUs() {
-    this.router.navigate(['/', 'aboutUs']);
-  }
 }

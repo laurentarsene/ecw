@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NavbarComponent}  from './navbar/navbar.component';
+import { ActivityComponent } from './activity/activity.component';
+import { HomeComponent } from './home/home.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  { path: 'aboutUs', component: NavbarComponent }
+  { path: '', component: HomeComponent},
+  { path: 'activity', component: ActivityComponent},
+  { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 ];
 
 @NgModule({

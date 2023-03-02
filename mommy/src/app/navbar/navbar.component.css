@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  margin-top: 1rem;
+  padding-right: 10rem;
+  padding-left: 25rem;
+  justify-content: space-between;
+}
+.nav__logo {
+  cursor: pointer;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.nav__logo__espace {
+  font-weight: lighter;
+}
+.nav__logo__woo {
+  font-weight: 100;
+  color: rgb(221, 168, 54);
+}
+.nav__buttons {
+  color: rgba(0, 0, 0, 0.479);
+  margin: auto 0;
+  display: flex;
+  gap: 3rem;
+}
+.nav__buttons :hover {
+  color: black;
+}/*# sourceMappingURL=navbar.component.css.map */

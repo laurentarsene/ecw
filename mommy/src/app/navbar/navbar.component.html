@@ -1,12 +1,24 @@
 <div class="nav">
-  <h3>espace<span>convivialite</span><span>WOO</span></h3>
-  <div class="nav__center">
-    <button mat-button color="accent" href="#">Bouton 2</button>
-    <button mat-button color="accent" href="#">Bouton 3</button>
-    <button mat-button color="accent" href="#">Bouton 4</button>
+  <div class="nav__logo">
+    <h3 (click)="redirectto('')">
+      <span class="nav__logo__espace">espace</span>
+      <span class="nav__logo__convivialite">Convivialite</span>
+      <span class="nav__logo__woo">|WOO</span>
+    </h3>
   </div>
-  <div class="nav__right">
-    <button mat-raised-button color="accent" href="#">Bouton 5</button>
+
+  <div class="nav__buttons">
+    <button mat-button color="black" href="#">Maga .</button>
+    <button mat-button color="black" href="#">Participer .</button>
+    <button (click)="redirectto('activity')" mat-button color="black">Activités .</button>
   </div>
+
+  <!-- <div class="nav__right">
+    <button mat-raised-button color="black" href="#">Contact</button>
+  </div> -->
+</div>
+
+<div class="navbarBackground">
+  
 </div>
 

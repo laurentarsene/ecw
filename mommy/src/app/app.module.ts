@@ -5,14 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import {
-  MatButtonModule,
-} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { ActivityComponent } from './activity/activity.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    ActivityComponent,
+    PagenotfoundComponent,
+    HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
