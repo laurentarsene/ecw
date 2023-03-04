@@ -13,6 +13,7 @@ export class NavbarComponent  {
     ) {
   }
   redirectto(where:string) {
+    console.log("test")
     this.router.navigateByUrl("/" + where)
   }
 }

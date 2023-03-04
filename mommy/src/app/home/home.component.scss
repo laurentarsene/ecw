@@ -5,13 +5,13 @@ body {
 .wrapper{
     display: grid;
     grid-template-areas: 
-    "img img img img img hero hero hero hero"
-    "l l l c c c r r r";
+    "img img img hero hero hero"
+    " l l c c r r";
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-        max-width: 1200px;
-    margin-left: 25rem;
+    max-width: 1200px;
+    margin-left: 15rem;
     margin-right: 10rem;
     margin-top: 5rem;
     gap:2rem;
@@ -21,34 +21,48 @@ body {
     grid-area: hero;
     letter-spacing: 0.2rem;
     line-height: 2;
-
-    margin-top: 3rem;
 }
 
 .heroimage {
     grid-area: img;
     background-color: rgba(0, 112, 47, 0.219);
     border-radius: 15px;
-    padding: 3rem;
+}
+
+section.light{
+	display: flex;
+	width: 50vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.but {
+    margin-top: 3rem;
+    margin-left:30%;
 }
 
 .textleft {
     grid-area: l;
     border-radius: 15px;
-    padding: 2rem;
     letter-spacing: 2px;
 }
 
 .textcenter {
    grid-area: c;
    border-radius: 15px;
-   padding: 2rem;
    letter-spacing: 2px;
 }
 
 .textright {
     grid-area: r;
     border-radius: 15px;
-    padding: 2rem;
     letter-spacing: 2px;
+}
+
+.little {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(44, 44, 44);
 }

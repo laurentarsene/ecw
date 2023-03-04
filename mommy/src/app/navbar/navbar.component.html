@@ -13,12 +13,23 @@
     <button (click)="redirectto('activity')" mat-button color="black">Activités .</button>
   </div>
 
-  <!-- <div class="nav__right">
-    <button mat-raised-button color="black" href="#">Contact</button>
-  </div> -->
 </div>
 
-<div class="navbarBackground">
-  
-</div>
 
+<mat-tab-group class="mobile-nav" color="black" mat-stretch-tabs="false" mat-align-tabs="center">
+  <mat-tab label="First">
+    <ng-template mat-tab-label>
+      <span (click)="redirectto('')">home</span>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Second">
+    <ng-template mat-tab-label>
+      <span (click)="redirectto('activity')">activity</span>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Third">
+    <ng-template mat-tab-label>
+      <span (click)="redirectto('activity')">activity</span>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

@@ -1,40 +1,44 @@
-body {
-    margin: 0;
-    padding: 0;
-}
 .nav {
-    display: flex;
-    margin-top: 1rem;
-    padding-right: 10rem;
-    padding-left: 25rem;
-    justify-content: space-between;
-    &__logo {
-        cursor: pointer;
-        font-weight:bolder;
-        letter-spacing: 2px;
-        &__espace {
-            font-weight:lighter;
-        }
-        &__convivialite {
-        }
-        &__woo {
-            font-weight:100;
-            color:rgb(221, 168, 54);
-        }
-    }
-    &__buttons {
-        color: rgba(0, 0, 0, 0.479);
-        margin: auto 0;
-        display: flex;
-        gap:3rem;
+    display: none;
+}
 
-        :hover {
-            color:black;
+.mobile-nav {
+    position:fixed;
+    bottom: 0;
+}
+
+@media only screen and (min-width:900px) {
+    .nav {
+        display: flex;
+        margin-top: 1rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        justify-content: space-between;
+        &__logo {
+            cursor: pointer;
+            font-weight:bolder;
+            letter-spacing: 2px;
+            &__espace {
+                font-weight:lighter;
+            }
+            &__convivialite {
+            }
+            &__woo {
+                font-weight:100;
+                color:rgb(221, 168, 54);
+            }
+        }
+        &__buttons {
+            color: rgba(0, 0, 0, 0.479);
+            margin: auto 0;
+            display: flex;
+            gap:3rem;
+
+            :hover {
+                color:black;
+            }
         }
     }
-    // &__right {
-    //     margin: auto;
-    // }
 }
 
 // .navbarBackground {
